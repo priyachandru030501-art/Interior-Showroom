@@ -1,0 +1,22 @@
+.collection-page { min-height: 65vh; padding-bottom: 90px; }
+.collection-banner { padding: 85px 20px 75px; text-align: center; background: #e8e4d9; }
+.collection-banner h1, .cart-heading h1, .about-banner h1, .contact-banner h1 { margin: 0 0 18px; font-family: 'Playfair Display', serif; font-size: clamp(38px, 5vw, 65px); font-weight: 500; }
+.collection-banner h1 em { color: #a57b51; }
+.collection-banner > p:last-child { color: #6f7067; }
+.collection-content { padding: 55px 7% 0; }
+.collection-toolbar { display: flex; justify-content: space-between; gap: 15px; margin-bottom: 25px; border-bottom: 1px solid #dedbd2; }
+.collection-toolbar p { color: #45483f; font-size: 13px; }
+.collection-toolbar span { color: #858579; }
+.product-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px 22px; }
+.product-card { min-width: 0; }
+.product-image-wrap { position: relative; height: 310px; overflow: hidden; background: #e9e5dc; }
+.product-image-wrap img { width: 100%; height: 100%; object-fit: cover; transition: transform .65s; }
+.product-card:hover img { transform: scale(1.05); }
+.product-category { position: absolute; top: 15px; left: 15px; padding: 7px 10px; background: #f7f5f0eF; color: #45483f; font-size: 10px; letter-spacing: 1px; text-transform: uppercase; }
+.product-info { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding-top: 16px; }
+.product-info h3 { margin: 0 0 8px; font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 500; }
+.product-info p { margin: 0; color: #6f7067; font-size: 14px; }
+.add-button { width: 42px; height: 42px; flex-shrink: 0; border: 1px solid #bcb8ad; border-radius: 50%; background: transparent; color: #292d25; font-size: 25px; cursor: pointer; transition: .25s; }
+.add-button:hover { background: #292d25; color: white; border-color: #292d25; }
+@media(max-width: 850px) { .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .product-image-wrap { height: 280px; } }
+@media(max-width: 540px) { .product-grid { grid-template-columns: 1fr; } .product-image-wrap { height: 320px; } .collection-toolbar { flex-direction: column; gap: 0; } .collection-content { padding: 40px 6%; } }
